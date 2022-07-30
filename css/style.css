@@ -63,7 +63,7 @@ header {
 
 .card {
     display: block;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     background-color: #8a7582;
 
 }
@@ -71,6 +71,10 @@ header {
 .card a {
     text-decoration: none;
     color: #1b1738;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card_photo {
@@ -124,6 +128,7 @@ ul li {
 ul li a:hover {
     color: #8a7582;
 }
+
 
 ul li a {
     color: black;
