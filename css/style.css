@@ -1,59 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     overflow-x: hidden;
+
+
 }
 
 html {
     background-color: #d7d4e2;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 
 h1 {
     color: #303f3c;
     text-transform: uppercase;
-    padding-bottom: .5em;
+    padding-bottom: 1%;
+    font-size: 5em;
+
 }
 
 
 h2 {
     text-transform: uppercase;
     color: #c7998c;
-    margin-bottom: 2em;
+    margin-bottom: 5%;
+    font-size: 4em;
 }
 
+
 .wrapper {
-    max-width: 80%;
+    max-width: 1280px;
     margin: 0 auto;
     overflow: hidden;
 }
 
 /* header */
-
 header {
-    padding: 5em 0;
+    max-width: 1280px;
+   
+
 }
 
-.header_wrapper {
+.sticky-nav {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #d7d4e2;
+}
+
+.sticky-nav ul {
+    padding: 1%;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+
+.sticky-nav ul li {
+    display: inline-block;
+    margin: 0 3%;
+}
+
+.sticky-nav ul li a {
+    padding: 10px 0;
+    color: black;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+
+/* section home */
+.home {
+    /* height: 80vh; */
+    padding-top: 200px;
+
+}
+
+.home_wrapper {
     display: flex;
     /* flex-wrap: wrap; */
-    justify-content: space-between;
+    justify-content:space-around;
+    align-items: center;
 }
 
 
-.header_photo {
-    width: 80%;
+
+
+.home_photo {
+    width: 40%;
+    height:40%;
 
 }
 
-.header_about {
-    width: 80%;
+.info {
+    text-align: left;
+}
+
+/* section about */
+
+.about {
+    height: 80vh;
+    padding-top: 300px;
+
+}
+
+.about_content {
     text-align: justify;
+    font-size: 1.7em;
 }
 
-/* main */
+
+
+/* section projects */
+.projects {
+    padding-top: 300px;
+}
+
 .cards_container {
     display: flex;
     justify-content: space-around;
@@ -63,8 +133,9 @@ header {
 
 .card {
     display: block;
-    margin-bottom: 4em;
+    margin-bottom: 5%;
     background-color: #8a7582;
+    border-radius: 15px;
 
 }
 
@@ -84,26 +155,28 @@ header {
 
 .card_info {
     background-color: #8a7582;
-    padding-left: 1em;
+    padding-left: 4%;
 }
 
 .card_tools {
-    padding-top: 1em;
+    padding-top: 3%;
 }
 
 .card_name {
-    padding-top: 1em;
+    padding-top: 3%;
 }
 
 .card_description {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
-/* footer */
+
+
+/* footer section contacts */
 footer {
-    margin-top: 6em;
-    margin-bottom: 2em;
+    margin-top: 20%;
+    margin-bottom: 2%;
 }
 
 .footer_name {
@@ -112,7 +185,7 @@ footer {
 
 .line {
     border-bottom: 2px solid grey;
-    margin-bottom: 1em;
+    margin-bottom: 2%;
 }
 
 ul {
@@ -120,7 +193,7 @@ ul {
 }
 
 ul li {
-    margin-bottom: 10px;
+    margin-bottom: 2%;
     list-style: none;
     color: black;
 }
@@ -144,7 +217,7 @@ ul li a {
 }
 
 .contacts li {
-    padding-right: 15px;
+    padding-right: 2%;
     font-size: 1.5em;
 }
 
@@ -153,6 +226,6 @@ ul li a {
 }
 
 nav a {
-    padding-right: 15px;
+    padding-right: 2%;
     text-decoration: none;
 }
